@@ -16,7 +16,7 @@ print("BEGIN!!!")
 def url(message):
     bot.send_message(message.from_user.id, "Поддерживаемые команды: /start /help")
 
-    keyboard  = types.InlineKeyboardMarkup()#resize_keyboard=True)#resize_keyboard=True)#
+    keyboard  = types.InlineKeyboardMarkup()# InlineKeyboardMarkup()#resize_keyboard=True)#resize_keyboard=True)#
     keyboard1 = types.InlineKeyboardButton(text='Выведите тарифы',callback_data="text1")
     keyboard2 = types.InlineKeyboardButton('Показать мои данные',callback_data="text2")
     keyboard.add(keyboard1,keyboard2)
@@ -37,11 +37,11 @@ def selector(c):
     if c.data == "text1":
         print('2222')
         #bot.send_message(cid, "Нажали 1-ю кнопку")#), reply_markup=keyboard)
-        bot.send_message(cid, "50000-месяц\n20000-неделя\n5000-день")
+        bot.send_message(cid, "Тарифы:\n50000-месяц\n20000-неделя\n5000-день")
     elif c.data == "text2":
         print('333')
         #bot.send_message(cid, "Нажали 2-ю кнопку")
-        bot.send_message(cid, cid)
+        bot.send_message(cid, "Ваш id :{}".format(cid))
     # if m.text == 'Выведите тарифы':
     #     bot.send_message(m.from_user.id, "50000-месяц\n20000-неделя\n5000-день")
     # elif m.text == 'Показать мои данные':
