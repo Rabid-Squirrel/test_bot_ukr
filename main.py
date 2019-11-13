@@ -54,7 +54,7 @@ def url(message):
     bot.send_message(message.from_user.id, '"привет","прив","здравствуйте","здравствуй","здорово","здарова","хай","hello","hi"')
     bot.send_message(message.from_user.id, "Или задайте следующий вопрос:")
     bot.send_message(message.from_user.id, "можете связать с оператором?")
-    bot.send_message(message.from_user.id, "Или просто напишите что-нибудь.")
+    bot.send_message(message.from_user.id, "Или просто напишите что-нибудь...")
     bot.send_message(message.from_user.id, "Хорошего Вам дня.")
 
 
