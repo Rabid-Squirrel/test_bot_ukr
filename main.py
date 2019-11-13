@@ -62,7 +62,7 @@ def url(message):
 def echo_all(message):
 
 
-    if message.text.strip().lower().split()[0] in ['привет','прив','здравствуйте',"здравствуй","здорово","здарова","хай","hello","hi"]:
+    if message.text.strip().lower().split()[0].split(',')[0].split('!')[0].split('.')[0] in ['привет','прив','здравствуйте',"здравствуй","здорово","здарова","хай","hello","hi"]:
         bot.send_message(message.from_user.id, "Доброго времени суток, чем могу помочь?")
     elif message.text == "можете связать с оператором?":
         bot.send_message(message.from_user.id, "На текущий момент все операторы заняты")
